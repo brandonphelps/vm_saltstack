@@ -3,7 +3,7 @@
 python-pip:
   pkg.installed
 
-virtualenvwrappr:
+virtualenv:
   pip.installed:
     - require:
       - pkg: python-pip
