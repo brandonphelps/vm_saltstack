@@ -3,6 +3,10 @@
 python-pip:
   pkg.installed
 
+
+libncurses5-dev:
+  pkg.installed
+
 virtualenv:
   pip.installed:
     - require:
