@@ -1,0 +1,5 @@
+
+
+
+mono-mcs:
+  pkg.installed
