@@ -6,3 +6,5 @@ base:
     - python_pip
     - emacs
     - cpp
+    - mono
+    - java
