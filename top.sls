@@ -5,3 +5,4 @@ base:
   '*':
     - webserver
     - rabbit
+    - python_pip
