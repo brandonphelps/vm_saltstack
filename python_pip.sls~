@@ -1,9 +1,0 @@
-
-
-python-pip:
-  pkg.installed
-
-virtualenvwrappr:
-  pip.installed:
-    - require:
-      - pkg: python-pip

@@ -1,24 +1,21 @@
 # -*- mode: yaml -*-
-# RabbitMQ Configuration
+# RabbitMQ configuration
 
 # Install RabbitMQ
 rabbitmq-server:
   pkg:
     - installed
 
-
-# Delete the default user (guest)
 guest:
-  rabbitmq_user.abset:
-    - require:
-      -pkg: rabbitmq-server
+  rabbitmq_user.absent:
+    - require
+      - pkg: rabbitmq-server
 
-# Create a celery user
-celery_user:
+celery_usre:
   rabbitmq_user.present:
-    - password: "{{ pillar['rabbitmq']['passwords']['celery_user'] }}"
+    - password: "{{ pillar['rabbitmq']['passwords']['celery_user']}}"
 
-# Create a celery virtual host
+
 celery_vhost:
   rabbitmq_vhost.present:
     - user: celery_user
@@ -28,3 +25,4 @@ celery_vhost:
     - require:
       - pkg: rabbitmq-server
       - rabbitmq_user: celery_user
+        
