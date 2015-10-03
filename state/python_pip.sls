@@ -7,6 +7,9 @@ python-pip:
 libncurses5-dev:
   pkg.installed
 
+libreadline5-dev:
+  pkg.installed
+
 virtualenv:
   pip.installed:
     - require:
@@ -19,5 +22,5 @@ celery:
 
 readline:
   pip.installed:
-    - required:
+    - require:
       - pkg: python-pip
