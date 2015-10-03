@@ -11,7 +11,7 @@ guest:
     - require:
       - pkg: rabbitmq-server
 
-celery_usre:
+celery_user:
   rabbitmq_user.present:
     - password: "{{ pillar['rabbitmq']['passwords']['celery_user']}}"
 
