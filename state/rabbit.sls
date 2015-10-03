@@ -8,7 +8,7 @@ rabbitmq-server:
 
 guest:
   rabbitmq_user.absent:
-    - require
+    - require:
       - pkg: rabbitmq-server
 
 celery_usre:
