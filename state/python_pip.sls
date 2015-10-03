@@ -7,9 +7,6 @@ python-pip:
 libncurses5-dev:
   pkg.installed
 
-libreadline5-dev:
-  pkg.installed
-
 virtualenv:
   pip.installed:
     - require:
