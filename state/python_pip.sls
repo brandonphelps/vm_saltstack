@@ -24,3 +24,4 @@ readline:
   pip.installed:
     - require:
       - pkg: python-pip
+      - pkg: python-dev
