@@ -16,3 +16,8 @@ celery:
   pip.installed:
     - require:
       - pkg: python-pip
+
+readline:
+  pip.installed:
+    - required:
+      - pkg: python-pip
