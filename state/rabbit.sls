@@ -15,7 +15,6 @@ celery_user:
   rabbitmq_user.present:
     - password: "{{ pillar['rabbitmq']['passwords']['celery_user']}}"
 
-
 celery_vhost:
   rabbitmq_vhost.present:
     - user: celery_user
