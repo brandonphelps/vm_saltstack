@@ -1,0 +1,16 @@
+
+nginx:
+  pkg:
+    - installed
+  service:
+    - running
+    - watch:
+      - file: /etc/nginx/nginx.conf
+      - file: /etc/nginx/htpasswd
+
+
+/etc/nginx/nginx.conf:
+  file.managed:
+    - source: salt://nginx/nginx.conf
+    - makedirs: true
+
