@@ -11,6 +11,7 @@ mysql_python_pkgs:
     - pkgs:
       - libmysqlclient-dev
       - mysql-client
+      - mysql-server
       - python-mysqldb
     - require:
       - pkg: server_pkgs
