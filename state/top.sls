@@ -6,7 +6,7 @@ base:
     - python_pip
     - emacs
     - rabbit
-    - sql
+    - postgres
   'second':
     - python_pip
     - cpp
