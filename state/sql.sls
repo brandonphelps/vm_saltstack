@@ -8,12 +8,6 @@ mysql_python_pkgs:
     - require:
       - pkg: server_pkgs
 
-mysql:
-  pip.installed:
-    - require:
-      - pkg: python-pip
-      - pkg: mysql_python_pkgs
-
 arena_db:
   mysql_database.present
 
