@@ -15,6 +15,9 @@ mysql_python_pkgs:
     - require:
       - pkg: server_pkgs
 
-mysql-client-core-5.5:
-  pkg.installed
+mysql:
+  pip.installed:
+    - require:
+      - pkg: python-pip
+      - pkg: mysql_python_pkgs
 
