@@ -19,6 +19,11 @@ celery:
     - require:
       - pkg: python-pip
 
+gunicorn:
+  pip.installed:
+    - require:
+      -pkg: python-pip
+
 readline:
   pip.installed:
     - require:

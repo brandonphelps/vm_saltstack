@@ -7,6 +7,7 @@ base:
     - emacs
     - rabbit
     - postgres
+    - nginx
   'second':
     - python_pip
     - cpp
