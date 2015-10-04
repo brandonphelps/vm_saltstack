@@ -27,7 +27,7 @@ arena_user:
 
 arena_db:
   postgres_database:
-    - preset
+    - present
     - owner: arena_user
     - runas: postgres
     - require:
