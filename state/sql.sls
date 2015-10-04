@@ -21,3 +21,5 @@ mysql:
       - pkg: python-pip
       - pkg: mysql_python_pkgs
 
+arena_db:
+  mysql_database.present
