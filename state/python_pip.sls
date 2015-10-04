@@ -22,7 +22,7 @@ celery:
 gunicorn:
   pip.installed:
     - require:
-      -pkg: python-pip
+      - pkg: python-pip
 
 readline:
   pip.installed:
